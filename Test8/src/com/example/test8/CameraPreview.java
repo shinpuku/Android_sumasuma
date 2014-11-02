@@ -89,5 +89,5 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 			Log.d("DBG", "Error starting camera preview: " + e.getMessage());
 		}
 	}
-
+	
 }
