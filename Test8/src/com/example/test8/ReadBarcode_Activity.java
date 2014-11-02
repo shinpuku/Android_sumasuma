@@ -171,7 +171,7 @@ public class ReadBarcode_Activity extends Activity{
 		MainActivity.TEMP_USER_ID = id;
 		MainActivity.JSON_CHECK_NUM = "0";
 		Log.d("id確認",id);
-		MainActivity.md5_code = Transform_md5.transform_Md5(getTimeNow() + MainActivity.MD5_BOTTOM_CODE);
+		MainActivity.md5_code = Transform_md5.transform_Md5(Transform_md5.getTimeNow() + MainActivity.MD5_BOTTOM_CODE);
 
 		task.execute(MainActivity.RSS_FEED_NUM_URL
 				+ MainActivity.TEMP_USER_ID
@@ -188,17 +188,6 @@ public class ReadBarcode_Activity extends Activity{
 				+ MainActivity.REGISTRATION
 				+ First_Activity.preference.getString("redi_id", "0")
 				);
-	}
-
-	/**
-	 * 現在の日時をyyyyMMddhhのフォーマットで取得する
-	 * @return 現在時刻を文字列で返す
-	 */
-	public String getTimeNow(){
-		DateFormat df = new SimpleDateFormat("yyyyMMddHH");
-		Date date = new Date(System.currentTimeMillis());
-		Log.d("date",df.format(date));
-		return df.format(date);
 	}
 
 }

@@ -2,6 +2,11 @@ package com.example.test8;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import android.util.Log;
 
 public class Transform_md5 {
 	
@@ -21,7 +26,7 @@ public class Transform_md5 {
 		return bytesToHexString(enclyptedHash);  
 	}
 
-	private static  String bytesToHexString(byte[] fromByte) {  
+	private static  String bytesToHexString(byte[] fromByte) {
 
 		StringBuilder hexStrBuilder = new StringBuilder();  
 		for (int i = 0; i < fromByte.length; i++) {  
@@ -34,5 +39,16 @@ public class Transform_md5 {
 		}  
 
 		return hexStrBuilder.toString();  
-	}  
+	}
+	
+	/**
+	 * 現在の日時をyyyyMMddhhのフォーマットで取得する
+	 * @return 現在時刻を文字列で返す
+	 */
+	public static String getTimeNow(){
+		DateFormat df = new SimpleDateFormat("yyyyMMddHH");
+		Date date = new Date(System.currentTimeMillis());
+		Log.d("date",df.format(date));
+		return df.format(date);
+	}
 }

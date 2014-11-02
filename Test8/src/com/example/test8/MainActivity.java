@@ -221,7 +221,7 @@ implements NavigationDrawerFragment.NavigationDrawerCallbacks ,OnClickListener{
 	}
 
 	public void loadCardInfo(){
-		md5_code = Transform_md5.transform_Md5(Camera_Activity.getTimeNow() + MainActivity.MD5_BOTTOM_CODE);
+		md5_code = Transform_md5.transform_Md5(Transform_md5.getTimeNow() + MainActivity.MD5_BOTTOM_CODE);
 		if(First_Activity.preference.getString("regist", "0").equals("1")){
 			task.execute(BARCODE_INFO_URL
 					+ First_Activity.preference.getString("id", "0")

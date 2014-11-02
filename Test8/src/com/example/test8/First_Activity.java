@@ -214,7 +214,7 @@ public class First_Activity extends FragmentActivity implements OnClickListener{
 	}
 
 	public void sendID(String id){
-		MainActivity.md5_code = Transform_md5.transform_Md5(Camera_Activity.getTimeNow() + MainActivity.MD5_BOTTOM_CODE);
+		MainActivity.md5_code = Transform_md5.transform_Md5(Transform_md5.getTimeNow() + MainActivity.MD5_BOTTOM_CODE);
 		DefaultHttpClient httpClient = new DefaultHttpClient();
 		HttpGet request = new HttpGet(MainActivity.PUSH_URL
 				+First_Activity.preference.getString("id", "0")
