@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">スマスマ通信</string>
+    <string name="title_section1">Bスマステーション</string>
+    <string name="title_section2">チラシ</string>
+    <string name="title_section3">プレゼント</string>
+    <string name="title_section4">Bカード</string>
+    <string name="title_section5">店舗情報</string>
+    <string name="title_section6">設定</string>
+    <string name="title_section7">プライバシーポリシー</string>
+    <string name="title_section8">ご利用方法・ヘルプ</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">E</string>
+    <string name="next">次へ</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="policy">aaaaaaaa
+        aaaaaaaaaaaaaaaaaaaa
+        
+        
+        \n
+        aaaaaaaaaaaaaaa</string>
+         
+    <string name="contract_title">ご利用につきまして</string>
+    <string name="OK">Bカードをアプリに登録（変更）する</string>
+    <string name="NG">後で登録する</string>
+    
+    <string name="f_text">この度はスマスマアプリのご利用、誠にありがとうございます。</string>
+    
+    <string name="point_warning">※ポイントの反映には3日～5日のお時間を頂く場合がございます。</string>
+    <string name="setting_info">お手元にお持ちのBカードのバーコードをアプリに登録してレジに精算時に見せると、ポイントが取得できます。</string>
+    <string name="setting_title">Bカードのアプリ登録・変更</string>
+    <string name="setting_button">Bカードをアプリに登録（変更）する</string>
+
+</resources>
